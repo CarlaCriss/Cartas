@@ -1,1 +1,48 @@
+#enclude <studio.h>
+
+\\  Estrutura para representar cada cartas
+
+
+Carta 1:
+Estado: Ceara
+Código: A01
+Nome da Cidade: Fortaleza
+População: 2000000
+Área: 1521.11 km²
+PIB: 30000000 bilhões de reais
+Número de Pontos Turísticos: 50
+
+ // Estrutura para representar um país e seus atributos
+ {
+   char Estado; Ceara
+   char Codigo da carta; A01, A02, A03, A04
+   char Nome da cidade; Fortaleza
+   int  populaçao; 2000000      
+   float Area; 1521.11
+   float pib; 30000000
+   int Numero de pontos turisticos 50
+
+   Carta 2 :
+   Estado: Ceara
+   Código: A01
+   Nome da Cidade: Fortaleza
+   População: 2000000
+   Área: 1521.11 km²
+   PIB: 30000000 bilhões de reais
+   Número de Pontos Turísticos: 50
+
+
+
+
+
+
+
+
+
+
+
+
+} Pais;
+
+
 
