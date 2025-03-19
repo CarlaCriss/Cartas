@@ -1,48 +1,48 @@
-#enclude <studio.h>
+#include <stdio.h>
+#include <string.h>
 
-\\  Estrutura para representar cada cartas
+// Definindo a estrutura para representar cada carta
+typedef struct {
+    char estado[50];
+    char codigo[5];
+    char cidade[50];
+    int populacao;
+    float area;
+    float pib;
+    int pontos_turisticos;
+} Carta;
 
+// Função para mostrar as informações de uma carta
+void mostrarCarta(Carta c) {
+    printf("Estado: %s\n", c.estado);
+    printf("Código: %s\n", c.codigo);
+    printf("Nome da Cidade: %s\n", c.cidade);
+    printf("População: %d\n", c.populacao);
+    printf("Área: %.2f km²\n", c.area);
+    printf("PIB: %.2f bilhões de reais\n", c.pib);
+    printf("Número de Pontos Turísticos: %d\n", c.pontos_turisticos);
+}
 
-Carta 1:
-Estado: Ceara
-Código: A01
-Nome da Cidade: Fortaleza
-População: 2000000
-Área: 1521.11 km²
-PIB: 30000000 bilhões de reais
-Número de Pontos Turísticos: 50
+int main() {
+    // Criando duas cartas de exemplo
+    Carta carta1 = {
+        "Ceará", "A01", "Fortaleza", 2000000, 1521.11, 30000000, 50
+    };
+    
+    Carta carta2 = {
+        "Distrito Federal", "B02", "Brasília", 2817381, 576078.0, 286944000000.0, 32
+    };
 
- // Estrutura para representar um país e seus atributos
- {
-   char Estado; Ceara
-   char Codigo da carta; A01, A02, A03, A04
-   char Nome da cidade; Fortaleza
-   int  populaçao; 2000000      
-   float Area; 1521.11
-   float pib; 30000000
-   int Numero de pontos turisticos 50
+    // Exibindo as cartas
+    printf("Jogo Super Trunfo de Países/Estados\n");
+    printf("\nCarta 1:\n");
+    mostrarCarta(carta1);
+    
+    printf("\nCarta 2:\n");
+    mostrarCarta(carta2);
 
-   Carta 2 :
-   Estado: Ceara
-   Código: A01
-   Nome da Cidade: Fortaleza
-   População: 2000000
-   Área: 1521.11 km²
-   PIB: 30000000 bilhões de reais
-   Número de Pontos Turísticos: 50
+    // Aqui você pode adicionar a lógica de comparação de atributos
+    // e determinar qual carta vence baseado em um atributo
 
-
-
-
-
-
-
-
-
-
-
-
-} Pais;
-
-
-
+    return 0;
+}
